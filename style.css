@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(/bg.jpg); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px; 
+}
+
+.container {
+    background: rgb(219, 215, 215);
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #333;
+}
+
+
+header p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+#add-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #218838;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+#todo-list {
+    list-style: none;
+}
+
+.todo-item {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-content {
+    flex-grow: 1;
+}
+
+.todo-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.todo-meta {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-complete, .btn-delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-complete {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.todo-item.completed .todo-title {
+    text-decoration: line-through;
+    color: #aaa;
+}
+.todo-item.completed {
+    opacity: 0.6;
+}
+
+.todo-item.overdue {
+    border-left: 5px solid #dc3545;
+    background-color: #fff8f8;
+    padding-left: 10px;
+}
