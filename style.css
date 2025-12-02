@@ -94,6 +94,8 @@ textarea {
     grid-template-columns : 1fr 1fr;
     gap: 20px;
 
+}
+
 .todo-item {
     background: #fff;
     border: 1px solid #eee; 
@@ -104,7 +106,7 @@ textarea {
     gap: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-}
+
 
 .todo-content {
     flex-grow: 1;
